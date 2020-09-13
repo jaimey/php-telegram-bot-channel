@@ -4,10 +4,10 @@ class telegram_bot
     public $botToken = null;
     public $chat_id  = null;
 
-    public function connect($array)
+    public function __construct($chat_id,$botToken)
     {
-        $this->botToken = $array[0];
-        $this->chat_id  = $array[1];
+        $this->chat_id  = $chat_id;
+        $this->botToken = $botToken;
     }
 
     public function send($text)

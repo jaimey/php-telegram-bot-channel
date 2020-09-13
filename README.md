@@ -6,8 +6,7 @@ Reemplazar `bot_token` y `@channel`
 <?php
 inlclude_once(__DIR__ . '/telegram-bot.php');
 
-$telegram_bot = new telegram_bot;
-$telegram_bot->connect(['bot_token', '@channel']);
+$telegram_bot = new telegram_bot("<chatid>","<token>");
 
 $response = $telegram_bot->send('Test'));
 
